@@ -1,0 +1,23 @@
+#game{
+    position: relative;
+    width: 455px;
+    margin-left: 33vw;
+    margin-top: 7vw;
+    box-shadow: 5px 10px #888888;
+}
+#resetBtn{
+    position: inherit;
+   margin-left: 45vw;
+   margin-top: 3vw;
+}
+.box {
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    font-size: 100px;
+    text-align: center;
+    margin: 0 auto;
+    position:relative;
+
+}
+
