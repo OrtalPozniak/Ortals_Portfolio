@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Courgette|Acme|Amatic+SC|Great+Vibes
+    |Frank Ruhl Libre|Indie+Flower|Leckerli+One|Lobster|Nunito|Pacifico|Poppins|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="shortcut icon" href="image/four.png" type="image/x-icon">
+    <link href="style/style.css" rel="stylesheet">
+    <title>four in a row</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="board">
+            <div class="row" >
+                <div class="col-md-1"></div>
+                <div class="col-md-11" id="wraper">
+                    <div id="cursor">
+                    </div>
+                    <button class="unvisibleBotton" onclick="click1('A');"></button>
+                    <button class="unvisibleBotton" onclick="click1('B');"></button>
+                    <button class="unvisibleBotton" onclick="click1('C');"></button>
+                    <button class="unvisibleBotton" onclick="click1('D');"></button>
+                    <button class="unvisibleBotton" onclick="click1('E');"></button>
+                    <button class="unvisibleBotton" onclick="click1('F');"></button>
+                    <button class="unvisibleBotton" onclick="click1('G');"></button>
+                  
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-1 circle" id="circ1" data-col="1" data-row="1" onclick="click1('A');">1</div>
+                <div class="col-md-1 circle" id="circ2" data-col="1" data-row="2" onclick="click1('B');">2</div>
+                <div class="col-md-1 circle" id="circ3" data-col="1" data-row="3" onclick="click1('C');">3</div>
+                <div class="col-md-1 circle" id="circ4" data-col="1" data-row="4" onclick="click1('D');">4</div>
+                <div class="col-md-1 circle" id="circ5" data-col="1" data-row="5" onclick="click1('E');">5</div>
+                <div class="col-md-1 circle" id="circ6" data-col="1" data-row="6" onclick="click1('F');">6</div>
+                <div class="col-md-1 circle" id="circ7" data-col="1" data-row="7" onclick="click1('G');">7</div>
+                <div class="col-md-4"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-1 circle" id="circ8" data-col="2" data-row="1" onclick="click1('A');">8</div>
+                <div class="col-md-1 circle" id="circ9" data-col="2" data-row="2" onclick="click1('B');">9</div>
+                <div class="col-md-1 circle" id="circ10" data-col="2" data-row="3" onclick="click1('C');">10</div>
+                <div class="col-md-1 circle" id="circ11" data-col="2" data-row="4" onclick="click1('D');">11</div>
+                <div class="col-md-1 circle" id="circ12" data-col="2" data-row="5" onclick="click1('E');">12</div>
+                <div class="col-md-1 circle" id="circ13" data-col="2" data-row="6" onclick="click1('F');">13</div>
+                <div class="col-md-1 circle" id="circ14" data-col="2" data-row="7" onclick="click1('G');">14</div>
+                <div class="col-md-4"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-1 circle" id="circ15" data-col="3" data-row="1" onclick="click1('A');">15</div>
+                <div class="col-md-1 circle" id="circ16" data-col="3" data-row="2" onclick="click1('B');">16</div>
+                <div class="col-md-1 circle" id="circ17" data-col="3" data-row="3" onclick="click1('C');">17</div>
+                <div class="col-md-1 circle" id="circ18" data-col="3" data-row="4" onclick="click1('D');">18</div>
+                <div class="col-md-1 circle" id="circ19" data-col="3" data-row="5" onclick="click1('E');">19</div>
+                <div class="col-md-1 circle" id="circ20" data-col="3" data-row="6" onclick="click1('F');">20</div>
+                <div class="col-md-1 circle" id="circ21" data-col="3" data-row="7" onclick="click1('G');">21</div>
+                <div class="col-md-4"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-1 circle" id="circ22" data-col="4" data-row="1" onclick="click1('A');">22</div>
+                <div class="col-md-1 circle" id="circ23" data-col="4" data-row="2" onclick="click1('B');">23</div>
+                <div class="col-md-1 circle" id="circ24" data-col="4" data-row="3" onclick="click1('C');">24</div>
+                <div class="col-md-1 circle" id="circ25" data-col="4" data-row="4" onclick="click1('D');">25</div>
+                <div class="col-md-1 circle" id="circ26" data-col="4" data-row="5" onclick="click1('E');">26</div>
+                <div class="col-md-1 circle" id="circ27" data-col="4" data-row="6" onclick="click1('F');">27</div>
+                <div class="col-md-1 circle" id="circ28" data-col="4" data-row="7" onclick="click1('G');">28</div>
+                <div class="col-md-4"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-1 circle" id="circ29" data-col="5" data-row="1" onclick="click1('A');">29</div>
+                <div class="col-md-1 circle" id="circ30" data-col="5" data-row="2" onclick="click1('B');">30</div>
+                <div class="col-md-1 circle" id="circ31" data-col="5" data-row="3" onclick="click1('C');">31</div>
+                <div class="col-md-1 circle" id="circ32" data-col="5" data-row="4" onclick="click1('D');">32</div>
+                <div class="col-md-1 circle" id="circ33" data-col="5" data-row="5" onclick="click1('E');">33</div>
+                <div class="col-md-1 circle" id="circ34" data-col="5" data-row="6" onclick="click1('F');">34</div>
+                <div class="col-md-1 circle" id="circ35" data-col="5" data-row="7" onclick="click1('G');">35</div>
+                <div class="col-md-4"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-1 circle" id="circ36" data-col="6" data-row="1" onclick="click1('A');">36</div>
+                <div class="col-md-1 circle" id="circ37" data-col="6" data-row="2" onclick="click1('B');">37</div>
+                <div class="col-md-1 circle" id="circ38" data-col="6" data-row="3" onclick="click1('C');">38</div>
+                <div class="col-md-1 circle" id="circ39" data-col="6" data-row="4" onclick="click1('D');">39</div>
+                <div class="col-md-1 circle" id="circ40" data-col="6" data-row="5" onclick="click1('E');">40</div>
+                <div class="col-md-1 circle" id="circ41" data-col="6" data-row="6" onclick="click1('F');">41</div>
+                <div class="col-md-1 circle" id="circ42" data-col="6" data-row="7" onclick="click1('G');">42</div>
+                <div class="col-md-4"></div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+    <script src="script/script.js"></script>
+</body>
+</html>

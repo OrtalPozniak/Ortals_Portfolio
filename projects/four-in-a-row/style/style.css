@@ -1,0 +1,71 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#board{
+    border: 1px solid black;
+    background-color: rgb(32, 32, 109);
+    margin: 50px auto;
+    min-height: 1000px;
+    z-index: 1;
+    position: relative;
+}
+
+.circle{
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 50%;
+    height: 90px;
+    width: 60px;
+    z-index: 900;
+    margin: 25px 20px;
+    /* position: absolute; */
+    /* cursor: pointer; */
+}
+
+.unvisibleBotton{
+     border:none;
+    background-color: transparent;
+    height: 90px;
+    width: 90px;
+    z-index: 900;
+    margin: 25px 20px;
+}
+
+  #cursor{
+    position:absolute;
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    box-sizing: border-box;
+    transition: transform .3s cubic-bezier(0, .64, .52, .24);
+    transform:translate(-29%,-29%);
+    border: 1px solid black;
+    pointer-events: none;
+    z-index:-1;
+    margin-top: 50px;
+
+  }
+
+#cursor.red{
+    background-color: red;
+}
+#cursor.yellow{
+    background-color: yellow;
+}
+
+
+
+/* .disc{
+    position:absolute;
+    z-index:-1;
+    top:-55px; 
+    left:14px; 
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    transition:0.1s;
+    border: 1px solid black;
+  } */ 
