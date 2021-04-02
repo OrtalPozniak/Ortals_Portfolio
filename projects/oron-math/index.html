@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css?family=Abril+Fatface|Courgette|Acme|Amatic+SC|Great+Vibes|Frank Ruhl Libre|Indie+Flower|Leckerli+One|Lobster|Nunito|Pacifico|Poppins|Raleway"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="shortcut icon" href="image/infinity.png" type="image/x-icon">
+    
+    <!--animation massage for the user-->
+    <link rel="stylesheet" href="animate.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="../../style/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="../../style/css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="../../style/css/style.css" rel="stylesheet">
+    <link href="style/style.css" rel="stylesheet">
+    <title>ex in math for oron</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row" id="myScreen">
+            <div class="col-md-12 ">
+                <h1 id="shadow">
+                    <span id="glow">exercise for oron</span>
+                </h1>
+            </div>
+        </div>
+        <!--שורה ראשונה לוח הכפל,ניקוד,מחשבון-->
+        <div class="row">
+            <div class="col-md-4">
+                <div id="showMulti">
+                    <img src="image/multiplication.jpg" alt="multiplication table">
+                </div>
+            </div>
+            <div class="col-md-4 text-center" id="centerBox">
+                <div class="godown">
+                    <button type="button" id="btn-Multiplication"
+                        class="btn btn-outline-default btn-rounded waves-effect godown">לוח הכפל</button>
+                    <div id="btn-Score" class="d-inline-block godown">ניקוד <span id="scoreDisplay"></span></div>
+                    <button type="button" id="btn-calculator"
+                        class="btn btn-outline-default btn-rounded waves-effect godown">
+                        <i class="fas fa-calculator"></i>&nbsp; מחשבון
+                    </button>
+                </div>
+                <div>
+                    <span id="number1">num1</span>
+                    <span id="operator"></span>
+                    <span id="number2">num2</span>
+                    <span>=</span>
+                    <input type="number" id="answer" class="godown">
+                </div>
+                <div>
+                    <button class="btn aqua-gradient" id="aquaGradient">check answer</button>
+                </div>
+                <div id="msg">
+                    <p id="MessageForUser" class="animated slow tada delay-2s"></p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div id="showCalc">
+                    <div id="phoneScreen">
+                        <div class="text-center">
+                            <input type="text" id="answerScreen">
+                        </div>
+                        <div id="wrapper">
+                            <img src="image/calculator/myphonelittle.png">
+                            <div id="buttons">
+                                <button class="btnPhone leftbtn topbtn" id="delete" onclick="erase()">
+                                </button>
+                                <button class="btnPhone turtwo topbtn">
+                                </button>
+                                <button class="btnPhone topbtn" id="modulu" onclick="myClick('%')">
+                                </button>
+                                <button class="btnPhone rightbtn topbtn" id="Division" onclick="myClick('/')">
+                                </button><br />
+
+                                <button class="btnPhone leftbtn" id="7" onclick="myClick(7)">
+                                </button>
+                                <button class="btnPhone turtwo" id="8" onclick="myClick(8)">
+                                </button>
+                                <button class="btnPhone" id="9" onclick="myClick(9)">
+                                </button>
+                                <button class="btnPhone rightbtn" id="Dual" onclick="myClick('*')">
+                                </button><br />
+
+                                <button class="btnPhone leftbtn" id="4" onclick="myClick(4)">
+                                </button>
+                                <button class="btnPhone turtwo" id="5" onclick="myClick(5)">
+                                </button>
+                                <button class="btnPhone" id="6" onclick="myClick(6)">
+                                </button>
+                                <button class="btnPhone rightbtn" id="minus" onclick="myClick('-')">
+                                </button><br />
+
+                                <button class="btnPhone leftbtn" id="1" onclick="myClick(1)">
+                                </button>
+                                <button class="btnPhone turtwo" id="2" onclick="myClick(2)">
+                                </button>
+                                <button class="btnPhone" id="3" onclick="myClick(3)"></button><button
+                                    class="btnPhone rightbtn" id="plus" onclick="myClick('+')">
+                                </button><br />
+
+                                <button class="btnPhone leftbtn" id="point" onclick="myClick('.')"></button><button
+                                    class="btnPhone turtwo" id="zero" onclick="myClick(0)">
+                                </button>
+                                <button class="btnPhone"></button><button class="btnPhone rightbtn " id="equal"
+                                    onclick="equal()">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/script/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="../../script/js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../../script/js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../../script/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../../script/js/mdb.min.js"></script>
+    <script src="script/calculator/script.js"></script>
+    <script src="script/script.js"></script>
+</body>
+
+</html>

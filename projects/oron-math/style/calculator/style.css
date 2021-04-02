@@ -1,0 +1,46 @@
+body{
+    margin: 35px auto;
+    background: url("../image/myphone10.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+   
+}
+
+ #phoneScreen{
+ /* 
+   z-index: 900;
+   display: inline-block;
+   border: 1px solid red;*/ 
+   position: inherit;
+   width: 370px;
+   height: 600px;
+   color: blue;
+   margin-top: 8px;
+ }
+
+/*img{
+    z-index: 1;
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+}
+*/
+.btnPhone{
+    border: 1px solid white;
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    margin: 12px 12px;
+    background-color: Transparent;
+    cursor:pointer; /*doing a hand mark when touching*/
+    margin-left: 20px;
+
+} 
+#answerScreen{
+    text-align: center;
+   margin-top: 156px;
+    margin-bottom: 70px;
+    background-color: black;
+    color: aliceblue;
+    border: none;
+}

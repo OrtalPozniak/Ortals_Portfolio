@@ -1,0 +1,157 @@
+@import "https://fonts.googleapis.com/css?family=Bad+Script";
+body{
+    font-size: 18px;
+   
+    font-family: 'Varela Round', sans-serif;
+    font-family: 'Advent Pro', sans-serif;
+    background: no-repeat url(../image/back13.jpg); 
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /* text-align: center; */
+    
+}
+h1{
+    text-shadow: 0 1px 0px #378ab4, 1px 0 0px #5dabcd, 1px 2px 1px #378ab4, 2px 1px 1px #5dabcd, 2px 3px 2px #378ab4, 3px 2px 2px #5dabcd, 3px 4px 2px #378ab4, 4px 3px 3px #5dabcd, 4px 5px 3px #378ab4, 5px 4px 2px #5dabcd, 5px 6px 2px #378ab4, 6px 5px 2px #5dabcd, 6px 7px 1px #378ab4, 7px 6px 1px #5dabcd, 7px 8px 0px #378ab4, 8px 7px 0px #5dabcd, 3px 3px 7px rgba(28, 110, 164, 0);
+    font-family: 'Courgette',Bold;
+    color: #fff;
+    font-size: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+#btn-Multiplication{
+    display: inline-block;
+    font-size: 13px;
+    font-family: Frank Ruhl Libre;
+    letter-spacing: 1px;
+    width: 127px;
+}
+#btn-Score{
+    display: inline-block;
+    font-size: 15px;
+    font-family: Frank Ruhl Libre;
+    letter-spacing: 1px;
+    margin-left: 10px;
+}
+#btn-calculator{
+    display: inline-block;
+    font-size: 13px; 
+    font-family: Frank Ruhl Libre;
+    letter-spacing: 1px;
+    width:136px;
+}
+#shadow {
+	margin: 0;
+	top: 50%;
+    left: 47vw; 
+    font-size: 2vw;
+	transform: translate(-50%,-50%);
+  font: normal 1em Great+Vibes;
+	letter-spacing: 10px;	
+	color:rgb(36, 36, 107);
+  text-shadow: 0 0 20px #fff,0 0 30px #fff,0 0 40px #228DFF,0 0 70px #228DFF,0 0 80px #228DFF,0 0 100px #228DFF,0 0 150px #228DFF;
+}
+#glow {
+    animation:neon1 linear infinite 2s;	
+    /* position: inherit; */
+    top:5vw;
+}
+@keyframes neon1 {
+	20% {	opacity: 1; }
+	80% {	opacity: 0.6; }
+}
+/* div #rowButtonsTop{
+    position: inherit;
+} */
+#centerBox{
+    margin: 0 auto;
+    text-align: center;
+
+}
+.godown{
+    margin-bottom: 1.5vw;
+}
+
+#MessageForUser{
+    font-family: Courgette;
+    font-size: 2vw;
+}
+#myScreen{      /*this is the little computer screen of oron*/
+    margin-top:6vw;
+}
+#showCalc{
+   display: none;
+}
+#showMulti{
+    display: none;
+ }
+ 
+
+#phoneScreen{
+    z-index: 900;
+    width: 370px;
+    height: 600px;
+    color: blue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+ 
+ .btnPhone{
+     border: 1px solid white;
+     width: 31px;
+     height: 31px;
+     border-radius: 50%;
+     margin: 7.5px 11px;
+     background-color: Transparent;
+     cursor:pointer; /*doing a hand mark when touching*/
+     z-index: 900;
+
+ } 
+ #answerScreen{
+     text-align: center;
+     background-color: black;
+     color: aliceblue;
+     border: none;
+     /* border: 1px solid #228DFF; */
+     z-index: 900;
+     position: absolute;
+     top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+ }
+ #wrapper{
+    top:7vw;
+     z-index: 200;
+     position: relative;
+     text-align: center;
+ }
+ #buttons{
+     position: absolute;
+     top:43%;
+     left:25%;
+ }
+ .leftbtn{
+     margin-left: -8px;
+ }
+ .turtwo{
+     /* margin-left: 12px; */
+ }
+ .rightbtn{
+     margin-left: 15px;
+ }
+ .topbtn{
+        padding-bottom: 24px;
+ }
+
+ #aquaGradient{
+    border-radius: 50%;
+ }
+
+
+ @media only screen and (max-width: 720px){
+     .rightbtn{
+         margin-left: 1px;
+     }
+ }
